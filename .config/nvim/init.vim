@@ -1,5 +1,6 @@
  set relativenumber
  set number
+ set encoding=utf8
 
  command RP !python %
  command RP2 !python2 %
@@ -47,6 +48,8 @@
  NeoBundle 'vim-airline/vim-airline'
  NeoBundle 'scrooloose/syntastic'
  " NeoBundle 'nvie/vim-flake8'
+ NeoBundle 'ryanoasis/vim-devicons'
+ NeoBundle 'tpope/vim-fugitive'
 
  call neobundle#end()
 
@@ -68,6 +71,7 @@
  "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
  "map <C-n> :NERDTreeToggle<CR>
  "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+ let NERDTreeIgnore = ['\.pyc$', '__pycache__']
  " NERDTree tabs setup
  map <C-n> <plug>NERDTreeTabsToggle<CR>
  let g:nerdtree_tabs_open_on_console_startup = 1
