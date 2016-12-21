@@ -7,3 +7,4 @@ https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare
 ### Files
 * `.config/nvim/init.vim` Neovim setup (NeoBundle with plugins)
 * `.zshrc` zshell run commands
+* `.yaourtrc` yaourt configuration (auto build)
