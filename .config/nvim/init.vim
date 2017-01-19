@@ -77,6 +77,7 @@
  let g:nerdtree_tabs_open_on_console_startup = 1
 
  " YouCompleteMe setup
+ " On clean install: './install.sh --clang-completer --system-libclang' in .vim/bundle/youcompleteme/
  let g:ycm_python_binary_path = 'python'
  let g:ycm_autoclose_preview_window_after_insertion = 1
 
