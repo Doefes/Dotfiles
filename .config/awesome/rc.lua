@@ -364,12 +364,12 @@ globalkeys = awful.util.table.join(
     -- ALSA volume control
     awful.key({ }, "XF86AudioRaiseVolume",
         function ()
-            os.execute(string.format("amixer -q set %s 1%%+", beautiful.volume.channel))
+            os.execute(string.format("amixer -q set %s 2%%+", beautiful.volume.channel))
             beautiful.volume.update()
         end),
     awful.key({ }, "XF86AudioLowerVolume",
         function ()
-            os.execute(string.format("amixer -q set %s 1%%-", beautiful.volume.channel))
+            os.execute(string.format("amixer -q set %s 2%%-", beautiful.volume.channel))
             beautiful.volume.update()
         end),
     awful.key({ }, "XF86AudioMute",
