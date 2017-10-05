@@ -57,6 +57,7 @@ plugins=(git)
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.config/todoist/todoist_functions.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -86,8 +87,9 @@ source $ZSH/oh-my-zsh.sh
 # Alias
 alias v='nvim'
 alias config='/usr/bin/git --git-dir=/home/doefes/.cfg/ --work-tree=/home/doefes'
-# alias swapls='ls ~/.local/share/nvim/swap/'
-# alias swaprm='rm ~/.local/share/nvim/swap/*'
+alias lastchrome='google-chrome-stable --restore-last-session'
+alias swapls='ls ~/.local/share/nvim/swap/'
+alias swaprm='rm ~/.local/share/nvim/swap/*'
 
 POWERLEVEL9K_DISABLE_RPROMPT=true
 #POWERLEVEL9K_PROMPT_ON_NEW_LINE=true
