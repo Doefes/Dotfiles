@@ -4,6 +4,9 @@
      github.com/copycat-killer
 
 --]]
+local handle = io.popen("ls /usr/share/backgrounds/wallpapers/* | shuf -n1")
+local result = handle:read("*a")
+handle:close()
 
 local gears  = require("gears")
 local lain   = require("lain")
@@ -15,7 +18,8 @@ local os     = { getenv = os.getenv }
 local theme                                     = {}
 theme.default_dir                               = require("awful.util").get_themes_dir() .. "default"
 theme.icon_dir                                  = os.getenv("HOME") .. "/.config/awesome/themes/holo/icons"
-theme.wallpaper                                 = os.getenv("HOME") .. "/.config/awesome/themes/holo/wall.png"
+-- theme.wallpaper                                 = os.getenv("HOME") .. "/.config/awesome/themes/holo/wall.png"
+theme.wallpaper                                 = result:sub(1, -2)
 theme.font                                      = "Roboto Bold 10"
 theme.taglist_font                              = "Roboto Condensed Regular 8"
 theme.fg_normal                                 = "#FFFFFF"
