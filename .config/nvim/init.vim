@@ -1,6 +1,10 @@
 set relativenumber
 set number
 set encoding=utf8
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 call plug#begin('~/.local/share/nvim/plugged')
 
