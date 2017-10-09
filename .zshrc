@@ -49,7 +49,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git z)
 
 # User configuration
 
@@ -90,6 +90,7 @@ alias config='/usr/bin/git --git-dir=/home/doefes/.cfg/ --work-tree=/home/doefes
 alias lastchrome='google-chrome-stable --restore-last-session'
 alias swapls='ls ~/.local/share/nvim/swap/'
 alias swaprm='rm ~/.local/share/nvim/swap/*'
+alias fuck='sudo $(fc -ln -1)'
 
 POWERLEVEL9K_DISABLE_RPROMPT=true
 #POWERLEVEL9K_PROMPT_ON_NEW_LINE=true
