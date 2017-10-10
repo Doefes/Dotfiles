@@ -1,4 +1,8 @@
+--[[
+  TODO: keep first screen as master -> new screen - no master
+  TODO: change layouts on the go
 
+]]--
 --[[
 
      Awesome WM configuration template
