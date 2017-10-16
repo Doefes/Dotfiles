@@ -239,27 +239,13 @@ globalkeys = awful.util.table.join(
     --           {description = "view  previous nonempty", group = "tag"}),
 
     -- Default client focus
-    awful.key({ altkey,           }, "j",
-        function ()
-            awful.client.focus.byidx( 1)
-        end,
-        {description = "focus next by index", group = "client"}
-    ),
-    awful.key({ altkey,           }, "k",
-        function ()
-            awful.client.focus.byidx(-1)
-        end,
-        {description = "focus previous by index", group = "client"}
-    ),
-
-
-    awful.key({ modkey,           }, "k",
-        function ()
-            awful.client.focus.byidx( 1)
-        end,
-        {description = "focus next by index", group = "client"}
-    ),
     awful.key({ modkey,           }, "j",
+        function ()
+            awful.client.focus.byidx( 1)
+        end,
+        {description = "focus next by index", group = "client"}
+    ),
+    awful.key({ modkey,           }, "k",
         function ()
             awful.client.focus.byidx(-1)
         end,
@@ -271,26 +257,26 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)          end,
               {description = "decrease master width factor", group = "layout"}),
     -- By direction client focus
-    -- awful.key({ modkey }, "j",
-    --     function()
-    --         awful.client.focus.bydirection("down")
-    --         if client.focus then client.focus:raise() end
-    --     end),
-    -- awful.key({ modkey }, "k",
-    --     function()
-    --         awful.client.focus.bydirection("up")
-    --         if client.focus then client.focus:raise() end
-    --     end),
-    -- awful.key({ modkey }, "h",
-    --     function()
-    --         awful.client.focus.bydirection("left")
-    --         if client.focus then client.focus:raise() end
-    --     end),
-    -- awful.key({ modkey }, "l",
-    --     function()
-    --         awful.client.focus.bydirection("right")
-    --         if client.focus then client.focus:raise() end
-    --     end),
+    awful.key({ altkey }, "j",
+        function()
+            awful.client.focus.bydirection("down")
+            if client.focus then client.focus:raise() end
+        end),
+    awful.key({ altkey }, "k",
+        function()
+            awful.client.focus.bydirection("up")
+            if client.focus then client.focus:raise() end
+        end),
+    awful.key({ altkey }, "h",
+        function()
+            awful.client.focus.bydirection("left")
+            if client.focus then client.focus:raise() end
+        end),
+    awful.key({ altkey }, "l",
+        function()
+            awful.client.focus.bydirection("right")
+            if client.focus then client.focus:raise() end
+        end),
     -- awful.key({ modkey,           }, "w", function () awful.util.mymainmenu:show() end,
     --           {description = "show main menu", group = "awesome"}),
 
@@ -375,9 +361,9 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, }, "z", function () awful.screen.focused().quake:toggle() end),
 
     -- Widgets popups
-    awful.key({ altkey, }, "c", function () lain.widget.calendar.show(7) end),
-    awful.key({ altkey, }, "h", function () if beautiful.fs then beautiful.fs.show(7) end end),
-    awful.key({ altkey, }, "w", function () if beautiful.weather then beautiful.weather.show(7) end end),
+    -- awful.key({ altkey, }, "c", function () lain.widget.calendar.show(7) end),
+    -- awful.key({ altkey, }, "h", function () if beautiful.fs then beautiful.fs.show(7) end end),
+    -- awful.key({ altkey, }, "w", function () if beautiful.weather then beautiful.weather.show(7) end end),
 
     -- Brightness
     awful.key({ }, "XF86MonBrightnessUp", function () awful.util.spawn("xbacklight -inc 10") end),
