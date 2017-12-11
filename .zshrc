@@ -91,6 +91,7 @@ alias lastchrome='google-chrome-stable --restore-last-session'
 alias swapls='ls ~/.local/share/nvim/swap/'
 alias swaprm='rm ~/.local/share/nvim/swap/*'
 alias fuck='sudo $(fc -ln -1)'
+alias todo='todoist --color list'
 
 POWERLEVEL9K_DISABLE_RPROMPT=true
 #POWERLEVEL9K_PROMPT_ON_NEW_LINE=true
