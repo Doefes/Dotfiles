@@ -276,7 +276,7 @@ local spr_right = wibox.widget.imagebox(theme.spr_right)
 local spr_bottom_right = wibox.widget.imagebox(theme.spr_bottom_right)
 local spr_left = wibox.widget.imagebox(theme.spr_left)
 local bar = wibox.widget.imagebox(theme.bar)
-local bottom_bar = wibox.widget.imagebox(theme.bottom_bar)
+-- local bottom_bar = wibox.widget.imagebox(theme.bottom_bar)
 
 local barcolor  = gears.color({
     type  = "linear",
@@ -370,34 +370,34 @@ function theme.at_screen_connect(s)
     }
 
     -- Create the bottom wibox
-    s.mybottomwibox = awful.wibar({ position = "bottom", screen = s, border_width = 0, height = 32 })
-    s.borderwibox = awful.wibar({ position = "bottom", screen = s, height = 1, bg = theme.fg_focus, x = 0, y = 33})
-
-    -- Add widgets to the bottom wibox
-    s.mybottomwibox:setup {
-        layout = wibox.layout.align.horizontal,
-        { -- Left widgets
-            layout = wibox.layout.fixed.horizontal,
-            mylauncher,
-        },
-        s.mytasklist, -- Middle widget
-        { -- Right widgets
-            layout = wibox.layout.fixed.horizontal,
-            spr_bottom_right,
-            netdown_icon,
-            networkwidget,
-            netup_icon,
-            bottom_bar,
-            cpu_icon,
-            cpuwidget,
-            bottom_bar,
-            calendar_icon,
-            calendarwidget,
-            bottom_bar,
-            clock_icon,
-            clockwidget,
-        },
-    }
+    -- s.mybottomwibox = awful.wibar({ position = "bottom", screen = s, border_width = 0, height = 32 })
+    -- s.borderwibox = awful.wibar({ position = "bottom", screen = s, height = 1, bg = theme.fg_focus, x = 0, y = 33})
+    --
+    -- -- Add widgets to the bottom wibox
+    -- s.mybottomwibox:setup {
+    --     layout = wibox.layout.align.horizontal,
+    --     { -- Left widgets
+    --         layout = wibox.layout.fixed.horizontal,
+    --         mylauncher,
+    --     },
+    --     s.mytasklist, -- Middle widget
+    --     { -- Right widgets
+    --         layout = wibox.layout.fixed.horizontal,
+    --         spr_bottom_right,
+    --         netdown_icon,
+    --         networkwidget,
+    --         netup_icon,
+    --         bottom_bar,
+    --         cpu_icon,
+    --         cpuwidget,
+    --         bottom_bar,
+    --         calendar_icon,
+    --         calendarwidget,
+    --         bottom_bar,
+    --         clock_icon,
+    --         clockwidget,
+    --     },
+    -- }
 end
 
 return theme
