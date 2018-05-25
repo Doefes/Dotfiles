@@ -206,9 +206,9 @@ end)))
 local bat = lain.widget.bat({
     settings = function()
         bat_header = " Bat "
-        bat_p      = bat_now.perc .. " "
-        if bat_now.ac_status == 1 then
-            bat_p = bat_p .. "Plugged "
+        bat_p      = bat_now.perc .. "% "
+        if bat_now.status == "Charging" then
+            bat_p = bat_p .. "AC "
         end
         widget:set_markup(markup.font(theme.font, markup(blue, bat_header) .. bat_p))
     end
