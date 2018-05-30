@@ -29,7 +29,7 @@ endif
 
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 map <C-n> <plug>NERDTreeTabsToggle<CR>
-let g:nerdtree_tabs_open_on_console_startup =1
+" let g:nerdtree_tabs_open_on_console_startup =1
 "
 " YouCompleteMe setup
 let g:ycm_server_python_interpreter = 'python2'
