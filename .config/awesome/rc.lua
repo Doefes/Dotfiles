@@ -69,7 +69,7 @@ local terminal     = "termite"
 local editor       = os.getenv("EDITOR") or "nvim"
 local gui_editor   = "gvim"
 local browser      = "firefox"
-local guieditor    = "atom"
+local guieditor    = "code"
 
 awful.util.terminal = terminal
 awful.util.tagnames = { "1", "2", "3", "4", "5" }
